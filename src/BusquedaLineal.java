@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 import models.Persona;
@@ -6,7 +7,6 @@ public class BusquedaLineal {
     private List<Persona> personas;
 
     public BusquedaLineal(List<Persona> personas){
-        this.personas = personas;
 
     }
 
@@ -50,7 +50,7 @@ public class BusquedaLineal {
 
 /*
     BUSQUEDA secuencial > complejidad >>promedio(O(n)) >> en el mejor de los casos(O(1))
-    BUSQUEDA BINARIA > complejidad >>promedio(O(log n)) mejor de los casos(0(1)): porque en cada interaccio  divido el tamaño de mi entrada
+    BUSQUEDA BINARIA > complejidad >>promedio(O(log n)) mejor de los casos(0(1)): porque en cada interaccion  divido el tamaño de mi entrada
     >Descartar la mitad , pero debe estar ordenado bajo el criterio de busqueda es decir ACENDENTEMENTE O DECENDENTEMENTE
     >central = (bajo + alto)/ 2
     >1ro preguntar eres lo que estoy buscando?

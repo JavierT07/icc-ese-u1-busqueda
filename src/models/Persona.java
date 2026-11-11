@@ -11,7 +11,7 @@ package models;
 
 
 
-public class Persona {
+public class Persona implements Comparable<Persona>  {
 
     private String name;
     private int age;
@@ -54,6 +54,12 @@ public class Persona {
     public String toString(){
         return "name" + name;
 
+    }
+
+    @Override
+    public int compareTo(Persona arg0) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
     }
 
     
